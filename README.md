@@ -71,4 +71,4 @@ There were many things that I got in touch for the first time. Like:
 
 ## Author
 
-- Twitter - [@Okolo_Arthur](https://github.com/ismaeldivita/chip-navigation-bar)
+- Twitter - [@Okolo_Arthur](https://twitter.com/Okolo_Arthur)
