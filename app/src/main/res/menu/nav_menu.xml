@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/ic_home"
+        android:title="Home"
+        tools:ignore="MenuTitle" />
+
+    <item
+        android:id="@+id/favorite"
+        android:icon="@drawable/ic_favorite"
+        android:title="Favorite"
+        tools:ignore="MenuTitle" />
+
+    <item
+        android:id="@+id/coming_soon"
+        android:icon="@drawable/ic_whatshot"
+        android:title="New &amp; Hot"
+        tools:ignore="MenuTitle" />
+
+</menu>

@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    tools:context=".fragment.ActionFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:id="@+id/action_relative"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="RtlSymmetry">
+
+            <com.bosphere.fadingedgelayout.FadingEdgeLayout
+                android:id="@+id/cardView"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:fadingEdgeLength="30dp"
+                app:fel_edge="bottom"
+                app:fel_size_bottom="80dp">
+
+                <ImageView
+                    android:id="@+id/single_movie_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom">
+
+                    <TextView
+                        android:id="@+id/single_movie_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginEnd="70dp"
+                        android:layout_marginBottom="10dp"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:gravity="center"
+                        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
+                        android:textColor="@color/white" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/single_movie_title"
+                        android:layout_marginBottom="40dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/my_list"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_marginStart="20dp"
+                            android:text="My list"
+                            android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"
+                            android:textColor="@color/white"
+                            app:drawableTopCompat="@drawable/ic_action_add" />
+
+                        <TextView
+                            android:id="@+id/remove_list"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_marginStart="20dp"
+                            android:text="My list"
+                            android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"
+                            android:textColor="@color/white"
+                            android:visibility="invisible"
+                            app:drawableTopCompat="@drawable/ic_action_check" />
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/play"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:text="Play"
+                            android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"
+                            app:drawableLeftCompat="@drawable/ic_play" />
+
+                        <TextView
+                            android:id="@+id/more_info"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginEnd="20dp"
+                            android:text="Info"
+                            android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"
+                            android:textColor="@color/white"
+                            app:drawableTopCompat="@drawable/ic_action_info" />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </com.bosphere.fadingedgelayout.FadingEdgeLayout>
+
+            <TextView
+                android:id="@+id/popular_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cardView"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:text="Popular"
+                android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                android:textSize="22sp" />
+
+            <FrameLayout
+                android:id="@+id/popular_frame"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/popular_text">
+
+                <com.google.android.material.progressindicator.CircularProgressIndicator
+                    android:id="@+id/popular_progress_bar"
+                    android:layout_width="wrap_content"
+                    android:indeterminate="true"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|center_horizontal" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingEnd="5dp" />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/toprated_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/popular_frame"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:text="Top Rated"
+                android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                android:textSize="22sp" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/toprated_text">
+
+                <com.google.android.material.progressindicator.CircularProgressIndicator
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:indeterminate="true"
+                    android:id="@+id/topRated_progress_bar"
+                    android:layout_gravity="center_vertical|center_horizontal" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/top_rated_recyclerview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="horizontal"
+                    android:paddingEnd="5dp" />
+            </FrameLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</FrameLayout>
