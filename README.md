@@ -22,7 +22,6 @@ This App is about Netflix App cloning for movies info and streaming with the hel
 - Navigations (Fragments)
 
 ## The Challenge
-![mock_up](https://user-images.githubusercontent.com/54189037/180679692-577abb5a-7c7a-4369-bc84-1e3a3e84e873.png)
 
 Users should be able to
 - Create an account, Sign in / Sign out
