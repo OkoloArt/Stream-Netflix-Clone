@@ -71,7 +71,7 @@ class ActionFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         val connectivityLiveData = ConnectivityLiveData(activity!!.application)
-        connectivityLiveData.observe(this, { isAvailable ->
+        connectivityLiveData.observe(viewLifecycleOwner) { isAvailable ->
             when (isAvailable) {
                 true -> {
                     retrieveNowPlayingMovieJson(API_KEY, LANGUAGE, PAGES)
@@ -91,7 +91,7 @@ class ActionFragment : Fragment() {
                 }
             }
 
-        })
+        }
 
         binding.myList.setOnClickListener {
            addFavouriteMovies()

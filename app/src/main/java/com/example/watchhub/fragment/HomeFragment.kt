@@ -27,7 +27,6 @@ class HomeFragment : Fragment() {
     private val categoryArray = listOf(
         "Movies",
         "Tv Shows"
-
     )
 
     private var _binding: FragmentHomeBinding? = null
