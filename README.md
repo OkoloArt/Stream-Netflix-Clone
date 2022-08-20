@@ -1,25 +1,38 @@
+# Stream
+> _What is the project?_ - The Stream App is a Netflix inspired app for movies info and possibly streaming with the help of Kotlin and Android Studio
 
-# Stream-Netflix-Clone
+> _What is the MVP ?_ - The minimal viable product is a movie app that perform a network call using retrofit, parsing JSON data and showing movies and tv series to user
 
-This App is about Netflix App cloning for movies info and streaming with the help of Kotlin and Android Studio
+> _What are the sprinkles?_ - The sprinkles involves styling the app, adding animation , video play-back for trailer e.t.c
 
-## Table of contents
+> Live demo [_Stream_](https://appetize.io/app/27optrp2rvsi5c325kmj6mexfi?device=pixel4&osVersion=11.0&scale=75). 
 
-- [Features](https://github.com/OkoloArt/Stream-Netflix-Clone#features)
-- [The Challenge](https://github.com/OkoloArt/Stream-Netflix-Clone#the-challenge)
-- [Screenshots](https://github.com/OkoloArt/Stream-Netflix-Clone#screenshots)
-- [Built with](https://github.com/OkoloArt/Stream-Netflix-Clone#built-with)
-- [Acknowledgements](https://github.com/OkoloArt/Stream-Netflix-Clone#acknowledgements)
-- [What I learned](https://github.com/OkoloArt/Stream-Netflix-Clone#what-i-learned)
-- [Author](https://github.com/OkoloArt/Stream-Netflix-Clone#author)
+## Table of Contents
+* [General Info](#general-information)
+* [Built with](#built-with)
+* [Features](#features)
+* [The Challenge](#the-challenge)
+* [Screenshots](#screenshots)
+* [Room for Improvement](#room-for-improvement)
+* [Acknowledgements](#acknowledgements)
+* [What I learned](#what-i-learned)
+* [Contact](#contact)
 
-## Features
+## General Information
+- The aim of this project is to provide info to the user. Such info include but not limited to popular movies and Tv series
+- Also the purpose of this project is to allow users get info on movie & Tv series details such as cast , genre, similiar e.t.c in real time.
 
-- Google Sign in/ Sign out Authentication
-- Light/dark mode toggle
-- Connecting to API
-- Android Architecture Components (Room, LiveData, ViewModel and Lifecycle)
-- Navigations (Fragments)
+## Built with
+- [Kotlin](https://kotlinlang.org/) - First class and official programming language for Android development.
+- [Coroutines](https://kotlinlang.org/docs/reference/coroutines-overview.html) - For asynchronous and more..
+- [Android Architecture Components](https://developer.android.com/topic/libraries/architecture) - Collection of libraries that help you design robust, testable, and maintainable apps.
+  - [Flow](https://kotlinlang.org/docs/reference/coroutines/flow.html) - A flow is an asynchronous version of a Sequence, a type of collection whose values are lazily produced.
+  - [ViewModel](https://developer.android.com/topic/libraries/architecture/viewmodel) - Stores UI-related data that isn't destroyed on UI changes. 
+  - [Room](https://developer.android.com/topic/libraries/architecture/room) - SQLite object mapping library.
+  - [Jetpack Navigation](https://developer.android.com/guide/navigation) - Navigation refers to the interactions that allow users to navigate across, into, and back out from the different pieces of content within your app
+- [Material Components for Android](https://github.com/material-components/material-components-android) - Modular and customizable Material Design UI components for Android.
+- [Picasso](https://square.github.io/picasso/) - A powerful image downloading and caching library for Android 
+- [Retofit](https://square.github.io/retrofit/) - A type-safe HTTP client for Android and Java.
 
 ## The Challenge
 
@@ -33,27 +46,22 @@ Users should be able to
 - To view and play trailers, see the cast of a selected movie, mark a movie as a favorite
 - Share the movie trailer link to social media or any other sharing platform
 
+## Features
+- Google Sign in/ Sign out Authentication
+- Light/dark mode toggle
+- Connecting to API
+- Navigations (Fragments)
+- Display data in to user in a recycler view using Adapter
+
 ## Screenshots
+![stream](https://user-images.githubusercontent.com/54189037/185766118-a1820395-5f80-4cc2-9f8b-70459e37e6c4.jpg)
 
-<img src="https://user-images.githubusercontent.com/54189037/169931399-98e5e08b-5801-4be0-9e3e-b5d2b5084d57.png" width="200" height="400"><img src="https://user-images.githubusercontent.com/54189037/169932547-c298cbed-0deb-4fa5-954f-b46e3ef3cc72.png" width="200" height="400"><img src="https://user-images.githubusercontent.com/54189037/169932557-f247d015-34d9-4474-b19f-70bb680c12e8.png" width="200" height="400">
-<img src="https://user-images.githubusercontent.com/54189037/169932564-98c3689b-6218-4807-9d49-72c2c4f5c797.png" width="200" height="400">
-<img src="https://user-images.githubusercontent.com/54189037/169932568-305859b9-28f1-4194-a417-9c24a2268a75.png" width="200" height="400">
-<img src="https://user-images.githubusercontent.com/54189037/169932573-4da4eabc-b436-4f3f-9d49-7999097e33ea.png" width="200" height="400"><img src="https://user-images.githubusercontent.com/54189037/169932579-1d557753-49c0-4ea6-92a5-68e3c407ba21.png" width="200" height="400">
-<img src="https://user-images.githubusercontent.com/54189037/169932584-9775923b-f237-4fbc-8788-ef3dc2d4c710.png" width="200" height="400">
-<img src="https://user-images.githubusercontent.com/54189037/169932597-d9523d56-7666-452b-b110-81c3f49d9d55.png" width="200" height="400"><img src="https://user-images.githubusercontent.com/54189037/169932603-633efdb1-faa0-4b3b-99cb-f8bb3e85dffd.png" width="200" height="400">
-
-## Built with
-
-- Kotlin
-- Retrofit (Network Calls)
-- Picasso (Image Loading)
-- Chip Navigation Bar (Bottom Navigation)
-- Android Youtube Player
-- Fading Edge Layout
-- CircularView
+## Room for Improvement
+- Search Functionality
+- Adding Landscape UI and UX
+- Language and Notifications set up
 
 ## Acknowledgements
-
  - [Chip Navigation Bar](https://github.com/ismaeldivita/chip-navigation-bar)
  - [Android Youtube Player](https://github.com/PierfrancescoSoffritti/android-youtube-player)
  - [Fading Edge Layout](https://github.com/bosphere/Android-FadingEdgeLayout)
@@ -69,6 +77,7 @@ There were many things that I got in touch for the first time. Like:
 - Familiarity with Room, LiveData, ViewModel and Lifecycle
 - Familiarity with Picasso and Retrofit
 
-## Author
+## Contact
+Created by [Okolo](https://twitter.com/Okolo_Arthur) - feel free to contact me!
 
-- Twitter - [@Okolo_Arthur](https://twitter.com/Okolo_Arthur)
+
