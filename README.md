@@ -1,5 +1,5 @@
-# Stream
-> _What is the project?_ - The Stream App is a Netflix inspired app for movies info and possibly streaming with the help of Kotlin and Android Studio
+# Streamify
+> _What is the project?_ - The Streamify App is a Netflix inspired app for movies info and possibly streaming with the help of Kotlin and Android Studio
 
 > _What is the MVP ?_ - The minimal viable product is a movie app that perform a network call using retrofit, parsing JSON data and showing movies and tv series to user
 
